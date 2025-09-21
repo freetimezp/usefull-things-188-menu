@@ -24,11 +24,16 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    const base =
+        (import.meta.env && import.meta.env.BASE_URL) !== undefined
+            ? import.meta.env.BASE_URL
+            : "/usefull-things-188-menu/";
+
     function resetPreviewImage() {
         menuPreviewImg.innerHTML = "";
         const defaultPreviewImg = document.createElement("img");
 
-        defaultPreviewImg.src = "/src/assets/images/img-1.jpg";
+        defaultPreviewImg.src = `${base}src/assets/images/img-1.jpg`;
         menuPreviewImg.appendChild(defaultPreviewImg);
     }
 
