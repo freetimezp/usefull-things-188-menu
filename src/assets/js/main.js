@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const defaultPreviewImg = document.createElement("img");
 
         defaultPreviewImg.src = `${base}src/assets/images/img-1.jpg`;
+        console.log(defaultPreviewImg);
         menuPreviewImg.appendChild(defaultPreviewImg);
     }
 
